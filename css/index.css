@@ -1,0 +1,263 @@
+@charset "uft-8";
+
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/index/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #444444;
+}
+
+.first-view-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#about {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 1;
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+  color: #eeeeee;
+}
+
+.link-button {
+  background-color: #bababa;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  background-color: #949494;
+}
+
+/* career css */
+#career {
+  margin-top: 30px;
+}
+
+
+.title {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  /* background-color: #eeeeee; */
+}
+
+.feature img {
+  width: 360px;
+}
+
+.feature-text {
+  max-width: 500px;
+  margin-right: 40px;
+  padding-top: 20px; /*仮*/
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .feature-text {
+  margin-left: 40px;
+  margin-right: 0;
+  padding-top: 20px; /*仮*/
+}
+
+.feature-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.feature-text h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.feature-text p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 10px; /*仮元25px*/
+}
+
+/* works css */
+#works {
+  margin-top: 30px;
+}
+
+.item-list {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 95px;
+  row-gap: 70px;
+  justify-content: center;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.item-list .price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.item-list li {
+  position: relative;
+}
+
+.item-list .item-label {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 18px);
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+
+.item-label {
+  background-color: #eeeeee;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .first-view {
+    height: calc(100vh - 50px);
+    /* align-items: flex-start; */
+  }
+  .first-view-text {
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .first-view-text p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* .lead p {
+    text-align: left;
+  } */
+
+  .feature {
+    display: block;
+    width: 500px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+
+  .feature-text {
+    margin-right: 0;
+  }
+
+  .reverse .feature-text {
+    margin-left: 0;
+  }
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  #about {
+    padding-top: 50px;
+  }
+
+  #career {
+    padding-top: 50px;
+  }
+
+  #works {
+    padding-top: 50px;
+  }
+
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
